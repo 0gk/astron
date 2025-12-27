@@ -1,4 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -62,6 +61,15 @@ return {
         -- navigate buffer tabs
         ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
+        ["<Leader>1"] = { "<cmd>buffer 1<cr>", desc = "Go to buffer 1" },
+        ["<Leader>2"] = { "<cmd>buffer 2<cr>", desc = "Go to buffer 2" },
+        ["<Leader>3"] = { "<cmd>buffer 3<cr>", desc = "Go to buffer 3" },
+        ["<Leader>4"] = { "<cmd>buffer 4<cr>", desc = "Go to buffer 4" },
+        ["<Leader>5"] = { "<cmd>buffer 5<cr>", desc = "Go to buffer 5" },
+        ["<Leader>6"] = { "<cmd>buffer 6<cr>", desc = "Go to buffer 6" },
+        ["<Leader>7"] = { "<cmd>buffer 7<cr>", desc = "Go to buffer 7" },
+        ["<Leader>8"] = { "<cmd>buffer 8<cr>", desc = "Go to buffer 8" },
+        ["<Leader>9"] = { "<cmd>buffer 9<cr>", desc = "Go to buffer 9" },
 
         -- mappings seen under group name "Buffer"
         ["<Leader>bd"] = {
